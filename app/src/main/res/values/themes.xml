@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.Droidcafe" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Gunakan latar putih untuk keseluruhan aplikasi -->
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <!-- Status bar (atas) putih -->
+        <item name="android:statusBarColor">@android:color/white</item>
+
+        <!-- Navigation bar (bawah) putih -->
+        <item name="android:navigationBarColor">@android:color/white</item>
+
+        <!-- Gunakan ikon gelap di status/navigation bar agar terlihat di atas background putih -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <!-- Tema utama -->
+    <style name="Theme.Droidcafe" parent="Base.Theme.Droidcafe" />
+</resources>

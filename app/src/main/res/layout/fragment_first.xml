@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Judul -->
+
+        <!-- Item 1: Donut -->
+
+        <TextView
+            android:id="@+id/text_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="24dp"
+            android:text="@string/text_intro"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/donut"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/donut_order_message"
+                android:src="@drawable/donut_circle" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Donuts are glazed and sprinkled with candy."
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <!-- Item 2: Ice Cream -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/ice_cream"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/icecream_circle"
+                android:contentDescription="@string/ice_cream_order_message"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ice cream sandwiches have chocolate wafers and vanilla filling."
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <!-- Item 3: Froyo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/froyo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/froyo_circle"
+                android:contentDescription="@string/froyo_order_message"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Froyo is premium self-serve frozen yogurt."
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
